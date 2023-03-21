@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function changebackgroundColor(colornum) {
+
+            if (colornum == 2) {
+                var color = "red"
+                myDiv.style.backgroundColor = color
+            }
+            else {
+                if (colornum == 3) {
+                    var color = "green"
+                    myDiv.style.backgroundColor = color
+                }
+                else {
+                    if (colornum == 4) {
+                        var color = "blue"
+                        myDiv.style.backgroundColor = color
+                    } else {
+                        console.log("pleas typ one of the folow numbers : 2,3,4")
+                    }
+
+                }
+
+            }
+            // var color = document.getElementById("colorInput").value;
+        }
+    </script>
+</head>
+
+<body id="myDiv">
+    <p> to change background color pleas enter
+        <br>
+        2 - red
+        <br>
+        3 - green
+        <br>
+        4 - blue
+        <br>
+    </p>
+    <input id="coloridInput">
+    <button onclick="changebackgroundColor(coloridInput.value)">Change Color</button>
+
+    <input id="num">
+    <button onclick="print_num(num.value)">enter the number</button>
+
+    <script>
+        function print_num(value) {
+            if (value < 11) {
+                console.log(value)
+            } else {
+                if (value < 21) {
+                    console.log(value)
+                    console.log(value)
+                } else {
+                    if (value < 31) {
+                        console.log("zur")
+                    } else {
+                        if (value < 41) {
+                            console.log(value * 4)
+
+                        } else {
+                            if (value < 51) {
+                                console.log(parseInt(value)+200)
+
+                            }
+                        }
+
+
+                    }
+
+                }
+
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
